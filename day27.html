@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS in front</h1>
+    <h1 id="dom">DOM</h1>
+    <p class="grp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores esse quae reiciendis provident hic possimus quidem, placeat cupiditate eos est mollitia dicta tempora beatae optio vitae aliquid porro eveniet facilis?</p>
+    <button onclick="change()" id="click">Click</button>
+    <h1 class="grp1">third</h1>
+    
+</body>
+<script>
+    /* let content = document.getElementsByTagName('h1')
+    console.log(content[2]); */
+    /* let group = document.querySelector('#dom')
+    console.log(group);
+ */
+    let content = document.getElementById('dom')
+    
+ //to change value inside the tag use innerHTML
+  
+    // content.innerHTML = "document object model"
+    // console.log(content); 
+
+    // let content1 = document.getElementsByClassName('grp1')
+    // content1[1].innerHTML = "oope"
+    // console.log(content1[1]);
+
+    // //to chage content in an id 
+
+    // dom.innerHTML = "changed"
+
+    //to change when clicked --events
+    function change(){
+        dom.innerHTML = "changed"
+        //to change colur
+        dom.style.color ="red"
+        dom.style.backgroundColor = "blue"
+        dom.style.fontSize ="50px"
+    }
+
+
+ 
+
+</script>
+</html>
